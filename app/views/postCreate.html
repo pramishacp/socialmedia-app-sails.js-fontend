@@ -1,0 +1,39 @@
+
+
+  <div class="container" ng-controller="postCreateCtrl">
+  
+         <form>
+               
+                 
+              <div class="form-group">
+                <label for="category">Title</label>
+                <input type="text" class="form-control" ng-model="post.title" >
+              </div>
+                
+              <div class="form-group">
+                <label for="category">Category</label>
+                <input type="text" class="form-control" ng-model="post.category_name" >
+              </div>
+
+              <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea class="form-control " ng-model="post.content" rows="5" id="comment"></textarea>
+              </div>
+
+          </form>
+             <!-- {{firstName}} {{lastName}}  -->
+
+
+        <input type="submit" ng-click="postCreate(post)" name="commit" class="btn-block btn btn-success" value="Submit">
+          
+     
+
+</div>
+
+<br>
+
+<div class="page">
+	<div class="container-fluid buttons-container">
+		<a href="#!/viewpost" class="btn btn-primary main-buttons " type="submit">View Posts</a>
+	</div>
+</div>

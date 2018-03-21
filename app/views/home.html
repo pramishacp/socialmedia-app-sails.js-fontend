@@ -1,0 +1,18 @@
+<div class="panel panel-default" ng-controller="homeCtrl" ng-init="viewHome()" >
+	
+    <div ng-repeat="post in posts">
+    <div class="list-group-item panel panel-primary">
+      <h3 class="text-center panel-heading">{{post.title}}</h3>
+
+      <section class="info">
+        <p>Author: {{post.user.first_name}} {{post.user.last_name}}</p>
+        <p>Category:<a ng-href="{{post.category.name}}"> {{post.category.name}}</a></p>
+      </section>
+
+      <p id="bio">Comment:</p>
+      <p class="well well-lg">{{post.content}}</p>
+    </div>
+    <br>
+    <br>
+    
+    </div>
